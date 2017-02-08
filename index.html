@@ -13,7 +13,7 @@
       </form>
       <input type="text" ng-model="messageFilter.message" class="form-control text-box" placeholder="Filter">
       <div class="messages-container">
-        <p ng-repeat="message in messages | filter:messageFilter | orderBy: '-createdAt'">
+        <p ng-repeat="message in messages | filter:messageFilter| orderBy: '-createdAt'">
           {{message.message}} - {{message.createdAt | date: 'MM/dd/yy @ h:mma'}}</p>
       </div>
     </div>
